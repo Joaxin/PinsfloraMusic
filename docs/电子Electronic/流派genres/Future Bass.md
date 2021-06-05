@@ -9,5 +9,6 @@ future bass，post dubstep和trap的结合。里面对bass的运用很多来源�
 **Flume**
 
 https://music.163.com/#/artist?id=361505
+https://music.douban.com/musician/129908/
 
 > 来自悉尼的电子音乐DJ、制作人及作曲人。
