@@ -24,10 +24,12 @@ def docsify_sidebar(dest_path = "docs"):
                 
                 for filename in filenames:
                     if filename not in ['README.md']:
-                        fname = os.path.splitext(filename)[0].upper()
-                        filename = filename.replace(" ", "%20")
-                        print('\t'*level + f"* [{fname}]({dest_path}\\{subpath}\\{filename})") 
-                        f.write('\t'*level + f"* [{fname}]({dest_path}\\{subpath}\\{filename})\n") 
+                    	## not an image file
+                    	if os.path.splitext(filename)[-1].lower() not in [".jpg",".png"]:
+	                        fname = os.path.splitext(filename)[0].upper()
+	                        filename = filename.replace(" ", "%20")
+	                        print('\t'*level + f"* [{fname}]({dest_path}\\{subpath}\\{filename})") 
+	                        f.write('\t'*level + f"* [{fname}]({dest_path}\\{subpath}\\{filename})\n") 
 
 
 docsify_sidebar()

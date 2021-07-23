@@ -21,10 +21,34 @@ Yellow Claw-Shotgun (feat. Rochelle)：[https://music.163.com/#/song?id=27929366
 DJ Snake / Lil Jon-Turn Down For What: [https://music.163.com/#/song?id=27888500](https://music.163.com/#/song?id=27888500)**
 {N27888500}
 **Lookas**
+
 > 比较擅长做比较史诗风格的热血trap。
 
 Lookas-Samurai: [https://music.163.com/#/song?id=30431385](https://music.163.com/#/song?id=30431385)
 {N30431385}
+
+**Tincup**
+
+https://music.163.com/#/artist?id=956139
+
+擅长做黑暗风格的trap。
+
+Tincup-Diamonds (feat. King Tutt)：https://music.163.com/#/song?id=33856621
+
+**Gameface**
+
+https://music.163.com/#/artist?id=58472
+
+中东风和邪教风trap的领导者，其实加入一些原声民族乐器和中东人声会让trap听起来更加黑暗可怕。和anti-general有过合作
+
+Gameface-Iniquity: https://music.163.com/#/album?id=34780918
+
+**Borgore**
+
+接触了这个dj后我觉得大家说以色列人很可怕是有原因的。。。不仅封面十分的黄暴，音乐听起来也是那么恐怖。
+
+Borgore-Ratchet：https://music.163.com/#/song?id=28638841 (儿歌 假)
+
 ### 国内
 **Anti-general**
 > 中国的trap大神，经常做中东风和和风的trap
@@ -32,6 +56,7 @@ Lookas-Samurai: [https://music.163.com/#/song?id=30431385](https://music.163.com
 Anti-General-人間地獄: [https://music.163.com/#/song?id=33162234](https://music.163.com/#/song?id=33162234)
 {N33162234}
 **Lofimaker**
+
 > 中国的trap大神，风格也不仅限于trap，中国风trap领导者。
 
 LOFIMAKER-蛊婆：[https://music.163.com/#/song?id=472097620](https://music.163.com/#/song?id=472097620)
@@ -40,7 +65,9 @@ LOFIMAKER-蛊婆：[https://music.163.com/#/song?id=472097620](https://music.163
 ## 代表曲目
 **UZ(ƱZ) **-Trap Shit V17: [https://music.163.com/#/song?id=28417384](https://music.163.com/#/song?id=28417384)
 {N28417384}
+
 Keymi-Psycho Killer: [https://music.163.com/#/song?id=33699269](https://music.163.com/#/song?id=33699269) (氛围自赏)
 {N33699269}
+
 Tincup-Lawless: [https://music.163.com/#/song?id=29027805](https://music.163.com/#/song?id=29027805) (dubstep)
 {N29027805}

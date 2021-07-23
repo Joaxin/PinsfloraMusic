@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="referrer" content="no-referrer"/> 
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" />
 <link 
@@ -19,6 +20,45 @@
 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
 <!-- require MetingJS -->
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<style>
+  .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #000;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 165px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  font-size: 0.8em;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+</style>
 </head>
 <body>
   <div id="app">Please wait...</div>
@@ -55,6 +95,32 @@
     target: 'h2, h3, h4, h5, h6'
   },
       search: 'auto', 
+      plugins: [
+    function(hook) {
+      hook.beforeEach(function(content) {
+      let nmusicbox = content.match(/\{N\d+\}/g);
+      const nplayer_pre = "<iframe frameborder='no' border='0' marginwidth='0' marginheight='0' width=100% height=86 src='//music.163.com/outchain/player?type=2&id=";
+
+      let nplayer_after = "";
+      if (nmusicbox) {
+        nmusicbox.forEach(function (item, idx) {
+          nplayer_after = item.replace(/(^\s*)|(\s*$)/g, "").replace(/[{N}]/g, '') + "&auto=1&height=66&auto=0'></iframe>"
+          content = content.replace(item, nplayer_pre + nplayer_after)
+        })
+      }
+      let melting_nsong = content.match(/\{MS\d+\}/g);
+      const nsong_pre = '<meting-js server="netease" type="song" id="'
+      let nsong_after = "";
+      if (melting_nsong) {
+        melting_nsong.forEach(function (item, idx) {
+          nsong_after = item.replace(/(^\s*)|(\s*$)/g, "").replace(/[{MS}]/g, '') + '"></meting-js>'
+          content = content.replace(item, nsong_pre + nsong_after)
+        })
+      }
+      return content;
+      });
+    }
+  ]
     }
   </script>
   <!-- Docsify v4 -->
